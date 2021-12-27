@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+
+
+---
+
+spring:
+  profiles: local
+  
+cgi:
+  work-basket:
+    host: http://localhost:8083/engine-rest
+
+---
+
+spring:
+  profiles: prod
+
+cgi:
+  work-basket:
+    host: http://localhost:8083/engine-rest
+
+
+
